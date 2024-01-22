@@ -1,0 +1,129 @@
+.Navbar {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 5rem;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.navWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+}
+.navLeft {
+  flex: 1;
+  font-size: 1.625rem;
+  color: blue;
+  font-weight: 500;
+}
+.navRight {
+  flex: 3;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.navMenu {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.navRight a {
+  text-decoration: none;
+  color: inherit;
+}
+.navMenu:hover {
+  color: blue;
+  text-decoration: overline;
+  transform: scale(1.05);
+}
+.navWrapper .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  outline: none;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+.navButton {
+  outline: none;
+  border: none;
+  max-width: 100%;
+  padding: 10px 30px;
+  border-radius: 3px;
+  background-color: blue;
+  color: white;
+  font-weight: 300;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 100px;
+}
+.navButton button a {
+  text-decoration: none;
+  color: inherit;
+}
+.navBtn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+  opacity: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .navWrapper .navBtn {
+    display: block;
+    opacity: 1;
+  }
+
+  .navRight {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    transition: 1s;
+    background-color: white;
+    color: blue;
+    z-index: 2;
+  }
+  .navButton {
+    margin-left: 0;
+  }
+  .navWrapper .responsive_nav {
+    transform: translateY(100vh);
+  }
+  .navRight .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Navbar {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+  .navLeft {
+    font-size: 1rem;
+  }
+}

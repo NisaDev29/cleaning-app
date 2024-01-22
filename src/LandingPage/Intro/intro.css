@@ -1,0 +1,28 @@
+#intro {
+  background-color: #edede9;
+  width: fit-content;
+  padding: 5% 5%;
+  margin: 0 auto;
+  min-height: 300px;
+}
+.introWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.introTitle {
+  text-align: left;
+  text-decoration: overline blue 0.2rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+.introPart {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 300;
+}
+.introPart h1 {
+  font-weight: 500;
+}
+.introPart h5 {
+  font-weight: 400;
+}

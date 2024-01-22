@@ -1,0 +1,84 @@
+.Footer {
+  margin: 0 auto;
+  width: 100%;
+  padding: 3rem 5rem;
+  background-color: lightgray;
+}
+.footWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.footTitle {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: blue;
+}
+.footLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 14px;
+}
+.footLinks a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}
+.footLinks a:hover {
+  color: darkblue;
+  font-weight: 500;
+}
+.footRight {
+  text-align: right;
+}
+.footCenter {
+  text-align: center;
+}
+.footIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: center;
+  size: 15px;
+}
+.footIconFb:hover {
+  color: blue;
+}
+.footIconInsta:hover {
+  color: palevioletred;
+}
+.footIconYout:hover {
+  color: red;
+}
+.footIconTwi:hover {
+  color: lightblue;
+}
+@media (max-width: 600px) {
+  .footWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .footRight {
+    text-align: center;
+    padding: 0;
+  }
+  .footLinks {
+    display: flex;
+    flex-direction: column;
+    gap: none;
+  }
+  .footTitle {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 2px;
+  }
+  .footOther p {
+    padding-bottom: 0px;
+    margin-bottom: 0rem;
+    cursor: pointer;
+  }
+}

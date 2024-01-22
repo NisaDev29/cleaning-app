@@ -1,0 +1,63 @@
+.How {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.howWrapper {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.howTitle h5 {
+  padding-top: 10px;
+  font-size: 1rem;
+  text-align: left;
+  text-decoration: overline blue 0.2rem;
+}
+.howMain {
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 500;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.howPart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+.howText {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.howImg {
+  height: 90%;
+  width: 100%;
+  max-height: 60px;
+  max-width: fit-content;
+  padding-bottom: 10px;
+}
+.howText h4 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.howText p {
+  font-weight: 300;
+  color: gray;
+  padding-bottom: 0;
+}
+@media (max-width: 600px) {
+  .howPart {
+    display: flex;
+    flex-direction: column;
+  }
+  p {
+    font-size: 0.875rem;
+  }
+}

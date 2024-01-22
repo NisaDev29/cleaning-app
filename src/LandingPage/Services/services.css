@@ -1,0 +1,89 @@
+#services {
+  padding-top: 20px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 3% 5%;
+  box-sizing: content-box;
+}
+.servicesWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.servicesTitle {
+  text-align: left;
+  padding-top: 10px;
+}
+.servicesTitle h5 {
+  text-decoration: overline blue 0.2rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.servicesTitle h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.servicesTypes {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  padding-top: 30px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 20px;
+}
+.service {
+  flex: 1 1 25%;
+  text-align: left;
+  padding: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.service p {
+  color: gray;
+  font-weight: 300;
+  padding-top: 0.5rem;
+}
+.service h3 {
+  padding-top: none;
+  font-weight: 500;
+}
+.serviceImg img {
+  max-width: 100%;
+  display: block;
+}
+.service:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+@media (max-width: 900px) {
+  .servicesTypes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  #services {
+    padding: 1% 2%;
+  }
+  .servicesTypes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    padding-top: 5px;
+  }
+  .servicesTitle h1 {
+    font-size: 26px;
+    padding-bottom: 0px;
+  }
+  .service {
+    padding: 1%;
+  }
+  .service h3 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
